@@ -51,4 +51,32 @@ for i in range(len(a)-1, -1, -1):
 
 # 2.7
 
+a = [1, 2, 3, 4]
+sum_a = 0
+
+for temp in a:
+    sum_a += temp
     
+print(sum_a)
+
+
+
+# 2.8
+
+msg = "Data Structures in Python"
+print(msg)
+print(msg.upper())
+print(msg.lower())
+
+
+    
+# 2.9
+
+price = {'콩나물해장국':4500, '갈비탕':9000, '돈가스':8000}
+price['팟타이']= 7000
+print(price)
+
+
+
+# 2.10
+
