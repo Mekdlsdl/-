@@ -24,29 +24,29 @@ print(lst)
 
 #3.5
 
-def Max_list(lst):
+def maxList(lst):
     max_lst = max(lst)
     return max_lst
 
-print("최대 =",Max_list(lst))
+print("최대 =",maxList(lst))
 
 
 
 #3.6
 
-def Min_max_list(lst):
+def minMaxList(lst):
     max_lst = max(lst)
     min_lst = min(lst)
     ans_tup = (max_lst, min_lst)
     return ans_tup
 
-print("(최대, 최소) =",Min_max_list(lst))
+print("(최대, 최소) =",minMaxList(lst))
 
 
 
 #3.7
 
-def Duplication_list(lst1, lst2):
+def duplicationList(lst1, lst2):
     count = 0
     for i in lst1:
         for j in lst2:
@@ -62,8 +62,8 @@ def Duplication_list(lst1, lst2):
 lst2 = [10,20,30]
 lst3 = [10,70,80,90]
 
-print("동일한 항목 있음",Duplication_list(lst,lst2))
-print("동일한 항목 없음",Duplication_list(lst,lst3))
+print("동일한 항목 있음",duplicationList(lst,lst2))
+print("동일한 항목 없음",duplicationList(lst,lst3))
 
 
 
