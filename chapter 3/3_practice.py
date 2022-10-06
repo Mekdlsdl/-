@@ -68,6 +68,7 @@ print("동일한 항목 없음",duplicationList(lst,lst3))
 
 
 #3.8
+
  def mergeSortList(lst1, lst2):
     i = 0
     j = 0
