@@ -70,9 +70,7 @@ print("동일한 항목 없음",duplicationList(lst,lst3))
 #3.8
 
  def mergeSortList(lst1, lst2):
-    i = 0
-    j = 0
-    k = 0
+    i, j, k = 0, 0, 0
     A = []
 
     while i < len(lst1) and j < len(lst2):
