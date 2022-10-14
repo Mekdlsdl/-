@@ -59,6 +59,26 @@ class Set:
 
 
 #test------
+# 진부분집합일 경우 -> True
+setA = Set()
+setA.insert(1)
+setA.insert(2)
+setA.insert(3)
+print(setA.items)
+
+setB = Set()
+setB.insert(1)
+setB.insert(2)
+setB.insert(3)
+setB.insert(4)
+print(setB.items)
+
+print(setA.properSubset(setB))
+
+
+
+# 진부분집합이 아닐 경우 False
+
 setA = Set()
 setA.insert(1)
 setA.insert(2)
@@ -73,5 +93,4 @@ setB.insert(3)
 setB.insert(4)
 print(setB.items)
 
-setA.properSubset(setB)
 print(setA.properSubset(setB))
