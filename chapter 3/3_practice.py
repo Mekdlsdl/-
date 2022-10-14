@@ -101,3 +101,20 @@ lst5 = [10,30,40]
 
 print(mergeSortList(lst4,lst5))
            
+
+    
+#3.9
+#set class 참조!
+
+    def properSubset(self, setB):
+        setC = Set()
+        setD = Set()
+
+        for elem in self.items:
+            if elem in setB.items:
+                setC.items.append(elem)
+            else: setD.items.append(elem)
+
+        if setC.items == setA.items and setD.size() == 0 and self.items != setB.items:
+            return True
+        else: return False
