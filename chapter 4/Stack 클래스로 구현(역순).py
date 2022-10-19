@@ -1,23 +1,31 @@
 class Stack:
+    def __str__(self):
+        return str(self.top[::-1])
+    
     def __init__(self):
         self.top = []
 
-    def isEmpty(self): return len(self.top) == 0
-    def size(self): return len(self.top)
-    def clear(self): self.top = []
+    def isEmpty(self):
+        return len(self.top) == 0
 
-    def push(self,item):
+    def push(self,item): # 대부분 O(1) / list의 전단 사용시 O(n) - 한칸씩 밀어야함
         self.top.append(item)
 
-    def pop(self):
+    def pop(self): # 항상 O(1)
         if not self.isEmpty():
             return self.top.pop(-1)
 
-    def peek(self):
+    def peek(self): # O(1)
         if not self.isEmpty():
             return self.top[-1]
 
-    
+    def size(self): # O(1)
+        return len(self.top)
+
+    def clear(self): # O(1)
+        self.top = []
+
+
 
 # test --------------
 
