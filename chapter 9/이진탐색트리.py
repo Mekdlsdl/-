@@ -99,6 +99,7 @@ def delete_bst_case2(parent, node, root):
 
     return root
 
+# case3. 두 개의 자식을 모두 갖는 노드의 삭제
 def delete_bst_case3(parent, node, root):
     succp = node
     succ = node.right
